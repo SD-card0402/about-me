@@ -1,14 +1,15 @@
-import { useState } from 'react'
+//import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import iconpng from './assets/icon.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from './assets/vite.svg'
 //import heroImg from './assets/hero.png'
 import './App.css'
 import { NavButton } from './components/NavButton'
+import About from './pages/About'
+import Contact from './pages/Contact'
 
-
-const App = () => {
-  const [count, setCount] = useState(0)
+const Home = () => {
   return (
     <>
       <section id='header'>
@@ -34,24 +35,17 @@ const App = () => {
           <img src={viteLogo} className="vite" alt="Vite logo" /> */}
         </div>
         <div>
-          <h1>My New Gear...</h1>
+          <h1>My Contents</h1>
           <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
+            このサイトはReactによって構成されています
           </p>
         </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
       </section>
 
-      <div className="ticks"></div>
+      <div className="tickas"></div>
 
       <section id="next-steps">
-        <div id="docs">
+        {/* <div id="docs">
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#documentation-icon"></use>
           </svg>
@@ -128,12 +122,24 @@ const App = () => {
               </a>
             </li>
           </ul>
-        </div>
+        </div> */}
       </section>
 
       <div className="ticks"></div>
-      <section id="spacer"></section>
+      <section id="spacer">
+        <footer> a</footer>
+      </section>
     </>
+  )
+}
+
+const App = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
   )
 }
 

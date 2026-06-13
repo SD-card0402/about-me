@@ -1,5 +1,11 @@
-#hedder{
-  background-color:cornflowerblue;
+@font-face {
+  font-family: 'MyOriginalFont';
+  src: url('src/assets/DragonQuestFC.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+  font-family: 'MyOriginalFont', sans-serif;
 }
 .counter {
   font-size: 16px;
@@ -162,7 +168,8 @@
 }
 
 #spacer {
-  height: 88px;
+  text-align:center;
+  height: 70px;
   border-top: 1px solid var(--border);
   @media (max-width: 1024px) {
     height: 48px;
