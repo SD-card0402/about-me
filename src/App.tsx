@@ -19,14 +19,6 @@ const Home = () => {
         </div>
       </section>
 
-      <section id='navigation'>
-        <NavButton />
-      </section>
-
-      <section id='navigete'>
-        <h3>上のボタンをクリックするとページが変わります</h3>
-      </section>
-
       <section id="center">
         <div className="hero">
           {<img src={iconpng} className='base' width='340' height='170' alt='アイコン画像' />
@@ -39,6 +31,12 @@ const Home = () => {
           <p>
             このサイトはReactによって構成されています
           </p>
+          <section id='navigation'>
+            <NavButton />
+          </section>
+          <section id='navigete'>
+            <h3>ボタンをクリックするとページが変わります</h3>
+          </section>
         </div>
       </section>
 
