@@ -12,7 +12,15 @@ export const NavButton = () => {
         onClick={() => navigate('/about')}
         aria-label="Go to About"
       >
-        一つ目のボタン
+        About
+      </button>
+
+      <button
+        className={styles.button}
+        onClick={() => navigate('/hobby')}
+        aria-label="Go to Hobby"
+      >
+        Hobby
       </button>
 
       <button
@@ -20,7 +28,7 @@ export const NavButton = () => {
         onClick={() => navigate('/contact')}
         aria-label="Go to Contact"
       >
-        二つ目のボタン
+        Contact
       </button>
     </>
   );

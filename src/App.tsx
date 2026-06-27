@@ -1,13 +1,13 @@
 //import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import iconpng from './assets/icon.png'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from './assets/vite.svg'
-//import heroImg from './assets/hero.png'
+import icon from './assets/icon.png'
+
 import './App.css'
 import { NavButton } from './components/NavButton'
 import About from './pages/About'
+import Hobby from './pages/Hobby'
 import Contact from './pages/Contact'
+
 
 const Home = () => {
   return (
@@ -21,10 +21,7 @@ const Home = () => {
 
       <section id="center">
         <div className="hero">
-          {<img src={iconpng} className='base' width='340' height='170' alt='アイコン画像' />
-          /* <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" /> */}
+          <img src={icon} className='base' width='340' height='170' alt='アイコン画像' />
         </div>
         <div>
           <h1>My Contents</h1>
@@ -34,13 +31,13 @@ const Home = () => {
           <section id='navigation'>
             <NavButton />
           </section>
-          <section id='navigete'>
+          <section id='navigation'>
             <h3>ボタンをクリックするとページが変わります</h3>
           </section>
         </div>
       </section>
 
-      <div className="tickas"></div>
+      <div className="tick"></div>
 
       <section id="next-steps">
         {/* <div id="docs">
@@ -125,7 +122,7 @@ const Home = () => {
 
       <div className="ticks"></div>
       <section id="spacer">
-        <footer> a</footer>
+        <footer> Footer tekina yatu.</footer>
       </section>
     </>
   )
@@ -136,6 +133,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
+      <Route path="/hobby" element={<Hobby />} />
       <Route path="/contact" element={<Contact />} />
     </Routes>
   )
