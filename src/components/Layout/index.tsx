@@ -16,9 +16,6 @@ export const Layout = ({ children, title }: LayoutProps) => {
             <h1>My Profile Site</h1>
             <h3>私についてのサイト</h3>
         </div>
-        <nav className={styles.navigation}>
-            <NavButton showHome={true} />
-        </nav>
         </div>
         </header>
 
@@ -27,6 +24,9 @@ export const Layout = ({ children, title }: LayoutProps) => {
         <div className={styles.content}>
             {children}
         </div>
+        <nav className={styles.navigation}>
+            <NavButton showHome={true} />
+        </nav>
     </main>
 
     <footer className={styles.footer}>
