@@ -2,7 +2,7 @@
 import { Routes, Route } from 'react-router-dom'
 import icon from './assets/icon.png'
 
-import './App.css'
+import styles from './App.module.css'
 import { NavButton } from './components/NavButton'
 import About from './pages/About'
 import Hobby from './pages/Hobby'
@@ -19,27 +19,27 @@ const Home = () => {
         </div>
       </section>
 
-      <section id="center">
-        <div className="hero">
-          <img src={icon} className='base' width='340' height='170' alt='アイコン画像' />
+      <section className={styles.center}>
+        <div className={styles.hero}>
+          <img src={icon} className={styles.base} width='340' height='170' alt='アイコン画像' />
         </div>
         <div>
           <h1>My Contents</h1>
           <p>
             このサイトはReactによって構成されています
           </p>
-          <section id='navigation'>
+          <section className={styles.navigation}>
             <NavButton />
           </section>
-          <section id='navigation'>
+          <section className={styles.navigation}>
             <h3>ボタンをクリックするとページが変わります</h3>
           </section>
         </div>
       </section>
 
-      <div className="tick"></div>
+      <div className={styles.ticks}></div>
 
-      <section id="next-steps">
+      <section className={styles.nextSteps}>
         {/* <div id="docs">
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#documentation-icon"></use>
@@ -121,7 +121,7 @@ const Home = () => {
       </section>
 
       <div className="ticks"></div>
-      <section id="spacer">
+      <section className={styles.spacer}>
         <footer> Footer tekina yatu.</footer>
       </section>
     </>
