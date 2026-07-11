@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import icon from './assets/icon.png'
 
 import styles from './App.module.css'
-import { NavButton } from './components/NavButton'
+import { Layout } from './components/Layout'
 import About from './pages/About'
 import Hobby from './pages/Hobby'
 import Contact from './pages/Contact'
@@ -11,14 +11,7 @@ import Contact from './pages/Contact'
 
 const Home = () => {
   return (
-    <>
-      <section id='header'>
-        <div className='header'>
-          <h1>My Profile Site</h1>
-          <h3>私の素晴らしいサイト</h3>
-        </div>
-      </section>
-
+    <Layout>
       <section className={styles.center}>
         <div className={styles.hero}>
           <img src={icon} className={styles.base} width='340' height='170' alt='アイコン画像' />
@@ -28,103 +21,17 @@ const Home = () => {
           <p>
             このサイトはReactによって構成されています
           </p>
-          <section className={styles.navigation}>
-            <NavButton />
-          </section>
-          <section className={styles.navigation}>
-            <h3>ボタンをクリックするとページが変わります</h3>
-          </section>
+          <h3>ボタンをクリックするとページが変わります</h3>
         </div>
       </section>
 
       <div className={styles.ticks}></div>
 
       <section className={styles.nextSteps}>
-        {/* <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div> */}
       </section>
 
       <div className="ticks"></div>
-      <section className={styles.spacer}>
-        <footer> Footer tekina yatu.</footer>
-      </section>
-    </>
+    </Layout>
   )
 }
 
