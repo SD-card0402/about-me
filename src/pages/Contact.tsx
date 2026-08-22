@@ -1,44 +1,93 @@
-import {useState} from "react";
-import type {FormEvent} from "react";
-import {Send} from "lucide-react";
 import styles from "./Contact.module.css";
 
-export default function Contact(){
-    const[sent,setSent]=useState(false);
-    function submit(e:FormEvent){e.preventDefault();
-        setSent(true)
-    }
-    return <main className={`${styles.page} ${styles.container}`}>
-        <section className={`${styles.glass} ${styles.content} ${styles.contact}`}>
+const skills = [
+    "HTML / CSS",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Python",
+    "Linux",
+    "Cyber Security",
+];
+
+const projects = [
+    {
+        title: "About me",
+        description:
+        "React と TypeScript を使用して制作した自己紹介サイト。",
+    },
+    {
+        title: "DQ quiz",
+        description:
+        "選択式のクイズアプリ。React と TypeScript を使用して制作。",
+    },
+    {
+        title: "Security Learning",
+        description:
+        "CTFや脆弱性診断を通じたセキュリティ学習。"
+    },
+];
+
+export default function Portfolio() {
+    return (
+    <main className={`${styles.page} ${styles.container}`}>
+        <section className={`${styles.glass} ${styles.content}`}>
+            
             <div className={styles.title}>
-                <p>Contact</p>
-                <hr/><h1>お問い合わせ</h1>
+                <p>Portfolio</p>
+                <hr />
+                <h1>スキルと成果物</h1>
             </div>
-            <p className={styles["center-copy"]}>
-                ご質問やご相談などがありましたら、フォームからお気軽にご連絡ください。
-            </p>
-            <form onSubmit={submit}>
-                <div className={styles["form-row"]}>
-                    <label>
-                        NAME
-                        <input required placeholder="お名前"/>
-                    </label>
-                    <label>
-                        EMAIL
-                        <input required type="email" placeholder="hello@example.com"/>
-                    </label>
-                </div>
-                <label>
-                    SUBJECT
-                    <input required placeholder="件名"/>
-                </label>
-                <label>
-                    MESSAGE
-                    <textarea required rows={5} placeholder="メッセージをご入力ください"/>
-                </label>
-                <button className={`${styles.button} ${styles.dark}`}><Send size={14}/> SEND MESSAGE</button>
-                {sent && <p className={styles.success}>メッセージを受け付けました。ありがとうございます。</p>}
-            </form>
+            <p className={styles["center-copy"]}>ホワイトハッカーを目指して学習している技術や、制作した成果物を紹介しています。</p>
+
+        <section className={styles.section}>
+            <h2>Skills</h2>
+            
+            <div className={styles.skillGrid}>
+                {skills.map((skill) => (
+                    <span key={skill} className={styles.skillCard}>
+                        {skill}
+                    </span>
+                ))}
+            </div>
         </section>
+
+        <section className={styles.section}>
+            <h2>Projects</h2>
+            
+            <div className={styles.projectGrid}>
+                {projects.map((project) => (
+                    <article
+                    key={project.title}
+                    className={styles.projectCard}
+                    >
+                        <h3>{project.title}</h3>
+                        <p>{project.description}</p>
+                    </article>
+                ))}
+            </div>
+        </section>
+
+        <section className={styles.section}>
+            <h2>Learning</h2>
+            
+            <p className={styles.center}>
+            React、TypeScript、ネットワーク、
+            サイバーセキュリティ、クラウド技術などを
+            中心に学習しています。
+            </p>
+        </section>
+
+        <section className={styles.section}>
+            <h2>Future Goals</h2>
+            
+            <p className={styles.center}>
+            安全で使いやすいWebサービスを開発できる
+            エンジニア兼ホワイトハッカーを目指しています。
+            </p>
+        </section>
+        
+    </section>
     </main>
+    );
 }
