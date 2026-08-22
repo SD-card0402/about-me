@@ -1,73 +1,51 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# About Me 
 
-Currently, two official plugins are available:
+サイトURL: 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+夏なので海をテーマとして作成しました。
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# 課題の紹介
 
-## Expanding the ESLint configuration
+## TOP
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- TOPページのこだわりポイントはシンプルかつ各ページへ飛びやすくしているところです
+- デザインのお手本は他のサイトでした。
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 自己紹介のページ
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- このページは簡単な自己紹介をするページです。
+- レイアウトに苦労しました。
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 趣味のページ
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- このページは趣味について紹介するページです
+- レイアウトとレスポンシブデザインに苦労しました
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## スキルのページ
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- 自分のスキルについて紹介するページです
+- レイアウトに悩みましたがこの形に落ち着きました
+
+
+# 一番見てほしいところ
+
+レイアウトです。どんな感じのレイアウトにするか色々迷ったのでそこが一番見てほしい部分になります。
+
+# 力を入れた点
+
+CSSの部分です。サイトの雰囲気が損なわれないようすべてのページのスタイルが一致するようにしました。
+
+## 実装面
+
+- 力を入れた部分は細かいところまで手を抜かないところです。なるべくフォントや色味なども海というテーマに沿うように選び修正などを重ねました。
+- 爽やかなイメージというところがアピールポイントです。
+- こだわったところはレイアウトです。見やすくごちゃごちゃしすぎないように、情報も入れつつというのを考えつつやりました。
+- Reactという慣れないやり方での実装だったので、やはりそこが苦労しました。
+
+## デザイン面
+
+- 爽やかな雰囲気を出したかったので、ガラスチックなパネルを配置しました。フォントなども雰囲気に合うように設定しています。
+- こだわったポイントも書きましょう
+- デザインを形にする上で難しかった箇所を書きましょう
