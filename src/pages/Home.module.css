@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Noto+Sans+JP:wght@300;400&display=swap");
+
+.page {
+  min-height: calc(100vh - 80px);
+  padding-top: 55px;
+  padding-bottom: 80px;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: min(1120px, calc(100% - 40px));
+  margin: auto;
+}
+
+.glass {
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.24);
+  box-shadow: 0 25px 70px rgba(20, 100, 110, 0.16);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+}
+
+.hero {
+  width: min(900px, 100%);
+  margin: auto;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.overline {
+  font-family: "Cormorant Garamond", serif;
+  letter-spacing: 0.35em;
+}
+
+.hero h1 {
+  margin: 26px 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(48px, 7vw, 76px);
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.04em;
+}
+
+.hero hr {
+  width: 55px;
+  border: 0;
+  border-top: 1px solid rgba(23, 77, 85, 0.38);
+}
+
+.intro {
+  line-height: 2.1;
+  letter-spacing: 0.1em;
+  color: rgba(36, 93, 100, 0.83);
+}
+
+.major {
+  display: block;
+  margin-top: 45px;
+  letter-spacing: 0.28em;
+  opacity: 0.55;
+}
