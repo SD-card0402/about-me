@@ -1,7 +1,7 @@
 
 # About Me 
 
-サイトURL: 
+サイトURL: https://github.com/SD-card0402/about-me.git
 
 夏なので海をテーマとして作成しました。
 
