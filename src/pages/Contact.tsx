@@ -1,4 +1,5 @@
-import {FormEvent,useState} from "react";
+import {useState} from "react";
+import type {FormEvent} from "react";
 import {Send} from "lucide-react";
 import styles from "./Contact.module.css";
 
