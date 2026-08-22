@@ -17,7 +17,7 @@ export default function About(){
         </div>
         <div>
             <h2 className={styles.statement}>
-                中澤　めぐみ
+                中澤めぐみ
             </h2>
             <p className={styles.copy}>
                 スーパーAI＆テクノロジー科のホワイトハッカー専攻です。<br />

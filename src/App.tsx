@@ -3,15 +3,14 @@ import { ArrowUpRight, House, UserRound, Heart, Mail } from "lucide-react";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Hobbies from "./pages/Hobbies";
-import Contact from "./pages/Contact";
+import Skills from "./pages/Contact";
 import styles from "./App.module.css";
-import HobbyDetails from "./pages/HobbyDetails";
 
 const pages = [
   { to: "/", en: "Top", ja: "トップ", Icon: House },
   { to: "/about", en: "About", ja: "自己紹介", Icon: UserRound },
   { to: "/hobbies", en: "Hobby's", ja: "趣味", Icon: Heart },
-  { to: "/contact", en: "Contact", ja: "お問い合わせ", Icon: Mail },
+  { to: "/contact", en: "Skills", ja: "スキル", Icon: Mail },
 ];
 
 function BottomNavigation() {
@@ -46,8 +45,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/hobbies" element={<Hobbies />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/hobbies/:slug" element={<HobbyDetails />} />
+        <Route path="/contact" element={<Skills />} />
       </Routes>
       <BottomNavigation />
       <footer className={styles.footer}>© 2026 Footer Mitaina Yatu</footer>
