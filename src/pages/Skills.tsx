@@ -31,6 +31,11 @@ export default function Skills() {
                 <hr />
                 <h1>スキルと成果物</h1>
             </div>
+            <img
+                src="/assets/slime.png"
+                alt="制作したクイズゲームの画面"
+                className={styles.featureImage}
+            />
             <p className={styles["center-copy"]}>ホワイトハッカーを目指して学習している技術や、制作した成果物を紹介しています。</p>
 
         <section className={styles.section}>

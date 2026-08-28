@@ -9,6 +9,7 @@ const items = [
     en: "Programming",
     ja: "プログラミング",
     text: "Web開発やセキュリティについて学んでいます",
+    image: "/assets/pokemon.png",
     Icon: Code2,
   },
   {
@@ -17,6 +18,7 @@ const items = [
     en: "Music",
     ja: "音楽",
     text: "様々なジャンルの音楽を聴いています",
+    image: "/assets/topazo.jpg",
     Icon: Music,
   },
   {
@@ -25,6 +27,7 @@ const items = [
     en: "Gaming",
     ja: "ゲーム",
     text: "FPSやRPGなどをプレイしています",
+    image: "/assets/daigo.jpeg",
     Icon: Gamepad2,
   },
 ];
@@ -40,13 +43,14 @@ export default function Hobbies() {
         </div>
 
         <div className={styles.hobbyGrid}>
-          {items.map(({ slug, en, ja, text, Icon }) => (
+          {items.map(({ slug, en, ja, text, image, Icon }) => (
             <Link
               key={slug}
               to={`/hobbies/${slug}`}
               className={styles.hobbyLink}
             >
               <article>
+                <img src={image} alt={`${en}のイメージ`} className={styles.hobbyImage} />
                 <Icon size={28} />
                 <h2>{en}</h2>
                 <small>{ja}</small>

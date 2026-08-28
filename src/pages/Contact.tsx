@@ -25,6 +25,12 @@ export default function Contact() {
                     ご質問やご依頼など、お気軽にお問い合わせください。
                 </p>
 
+                <img
+                  src="/assets/404 copy.jpeg"
+                  alt="プロフィール写真"
+                  className={styles.contactImage}
+                />
+
                 <form
                     className={styles.form}
                     onSubmit={handleSubmit}

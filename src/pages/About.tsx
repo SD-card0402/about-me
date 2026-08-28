@@ -10,7 +10,7 @@ export default function About(){
     <div className={styles["about-grid"]}>
         <div className={styles.identity}>
             <span>
-                <img src="dist/assets/404.jpeg" className={styles["identity-img"]} alt="アイコン"/>
+                <img src="/assets/404.jpeg" className={styles["identity-img"]} alt="アイコン"/>
             </span>
             <h2>Nakazawa Megumi</h2>
             <small>STUDENT</small>

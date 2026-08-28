@@ -80,6 +80,16 @@
   line-height: 2;
 }
 
+.contactImage {
+  display: block;
+  width: min(260px, 100%);
+  aspect-ratio: 1;
+  object-fit: cover;
+  margin: 28px auto 0;
+  border: 1px solid rgba(255,255,255,.6);
+  border-radius: 50%;
+}
+
 .form {
   margin-top: 50px;
 

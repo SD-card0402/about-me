@@ -95,6 +95,14 @@
   transition: 0.3s;
 }
 
+.hobbyImage {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  margin-bottom: 22px;
+}
+
 .hobbyLink article:hover {
   transform: translateY(-6px);
 
