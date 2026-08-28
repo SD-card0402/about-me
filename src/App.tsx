@@ -3,6 +3,7 @@ import { ArrowUpRight, House, UserRound, Heart, Mail } from "lucide-react";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Hobbies from "./pages/Hobbies";
+import HobbyDetails from "./pages/HobbyDetails";
 import Skills from "./pages/Contact";
 import styles from "./App.module.css";
 
@@ -46,6 +47,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/hobbies" element={<Hobbies />} />
         <Route path="/contact" element={<Skills />} />
+        <Route path="/hobbies/:slug" element={<HobbyDetails />} />
       </Routes>
       <BottomNavigation />
       <footer className={styles.footer}>© 2026 Footer Mitaina Yatu</footer>

@@ -8,7 +8,7 @@ const items = [
     slug: "programming",
     en: "Programming",
     ja: "プログラミング",
-    text: "こんなサイトがあったらなぁを\n自己満足で作っています",
+    text: "Web開発やセキュリティについて学んでいます",
     Icon: Code2,
   },
   {
@@ -16,7 +16,7 @@ const items = [
     slug: "music",
     en: "Music",
     ja: "音楽",
-    text: "ジャンル問わず音楽が好きです\nハードコアはいいぞ",
+    text: "様々なジャンルの音楽を聴いています",
     Icon: Music,
   },
   {
@@ -24,7 +24,7 @@ const items = [
     slug: "gaming",
     en: "Gaming",
     ja: "ゲーム",
-    text: "FPSやRPGなど\nいろんなゲームを機種問わず\nプレイしています",
+    text: "FPSやRPGなどをプレイしています",
     Icon: Gamepad2,
   },
 ];
@@ -39,33 +39,18 @@ export default function Hobbies() {
           <h1>趣味について</h1>
         </div>
 
-        <p className={styles["center-copy"]}>
-          色んなことに手を出しています
-        </p>
-
-        <div className={styles["hobby-grid"]}>
-          {items.map(({ n, slug, en, ja, text, Icon }) => (
+        <div className={styles.hobbyGrid}>
+          {items.map(({ slug, en, ja, text, Icon }) => (
             <Link
               key={slug}
               to={`/hobbies/${slug}`}
-              className={styles["hobby-link"]}
+              className={styles.hobbyLink}
             >
               <article>
-                <div className={styles["card-top"]}>
-                  <Icon size={20} />
-                  <i>{n}</i>
-                </div>
-
+                <Icon size={28} />
                 <h2>{en}</h2>
                 <small>{ja}</small>
-
-                <hr />
-
                 <p>{text}</p>
-
-                <span className={styles["detail-link"]}>
-                  詳細を見る →
-                </span>
               </article>
             </Link>
           ))}
