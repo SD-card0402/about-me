@@ -9,7 +9,6 @@ const hobbies = {
 
     categories: [
       {
-        name: "Frontend",
 
         cards: [
           {
@@ -147,13 +146,6 @@ export default function HobbyDetail() {
         </div>
 
         {hobby.categories.map((category) => (
-          <section
-            key={category.name}
-            className={styles.categorySection}
-          >
-            <h2 className={styles.categoryTitle}>
-              {category.name}
-            </h2>
 
             <div className={styles.cardGrid}>
               {category.cards.map((card) => (
@@ -175,7 +167,6 @@ export default function HobbyDetail() {
                 </section>
               ))}
             </div>
-          </section>
         ))}
       </section>
     </main>
