@@ -1,0 +1,198 @@
+@import url(
+"https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Noto+Sans+JP:wght@300;400&display=swap"
+);
+
+.page {
+  min-height: calc(100vh - 80px);
+  padding-top: 55px;
+  padding-bottom: 80px;
+}
+
+.container {
+  width: min(1120px, calc(100% - 40px));
+  margin: auto;
+}
+
+.glass {
+  border: 1px solid rgba(
+    255,
+    255,
+    255,
+    0.55
+  );
+
+  background: rgba(
+    255,
+    255,
+    255,
+    0.24
+  );
+
+  box-shadow:
+    0 25px 70px
+    rgba(20, 100, 110, 0.16);
+
+  backdrop-filter: blur(3px);
+}
+
+.content {
+  padding: 55px;
+}
+
+.title {
+  text-align: center;
+}
+
+.title p {
+  margin: 0;
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
+  font-size: 58px;
+
+  font-weight: 300;
+
+  font-style: italic;
+}
+
+.title h1 {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.4em;
+}
+
+.title hr {
+  width: 55px;
+
+  border: 0;
+
+  border-top: 1px solid
+    rgba(23, 77, 85, 0.38);
+}
+
+.centerCopy {
+  text-align: center;
+
+  margin-top: 24px;
+
+  line-height: 2;
+}
+
+.form {
+  margin-top: 50px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+.formGroup {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.formGroup label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  font-weight: 500;
+
+  color: #174d55;
+}
+
+.formGroup input,
+.formGroup textarea {
+  padding: 14px;
+
+  border: 1px solid
+    rgba(255,255,255,.6);
+
+  background: rgba(
+    255,
+    255,
+    255,
+    .25
+  );
+
+  color: #174d55;
+
+  border-radius: 10px;
+
+  font: inherit;
+
+  outline: none;
+
+  transition: .3s;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  border-color: #174d55;
+}
+
+.submitButton {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 14px 24px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #174d55;
+
+  color: white;
+
+  cursor: pointer;
+
+  font-size: 14px;
+
+  transition: .3s;
+}
+
+.submitButton:hover {
+  opacity: 0.85;
+}
+
+.success {
+  padding: 14px;
+
+  text-align: center;
+
+  color: white;
+
+  border-radius: 10px;
+
+  background: rgba(
+    23,
+    77,
+    85,
+    0.85
+  );
+}
+
+@media (max-width: 900px) {
+  .content {
+    padding: 32px 24px;
+  }
+
+  .title p {
+    font-size: 42px;
+  }
+}

@@ -46,6 +46,78 @@
     padding-bottom: 80px;
 }
 
+.header {
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 76px;
+    gap: 30px;
+}
+
+.logo {
+    flex-shrink: 0;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 22px;
+    letter-spacing: 0.14em;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+}
+
+.header-link {
+    position: relative;
+    display: grid;
+    gap: 2px;
+    padding: 10px 0;
+    opacity: 0.62;
+    transition: opacity 0.2s ease;
+}
+
+.header-link::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background: currentColor;
+    content: "";
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+}
+
+.header-link:hover,
+.header-link.active {
+    opacity: 1;
+}
+
+.header-link.active::after {
+    transform: scaleX(1);
+}
+
+.header-link b {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+}
+
+.header-link small {
+    font-size: 9px;
+    letter-spacing: 0.12em;
+}
+
 .bottom-navigation {margin: 0 auto 32px;}
 
 .bottom-navigation-label {
@@ -126,6 +198,25 @@
 }
 
 @media (max-width: 750px) {
+    .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 16px;
+        padding-bottom: 14px;
+    }
+
+    .header-navigation {
+        width: 100%;
+        justify-content: space-between;
+        gap: 12px;
+        overflow-x: auto;
+    }
+
+    .header-link {
+        flex-shrink: 0;
+    }
+
     .bottom-navigation {
         width: min(100% - 28px, 1120px);
         padding: 20px;
