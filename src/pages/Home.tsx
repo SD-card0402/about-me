@@ -3,9 +3,9 @@ import { ChevronLeft, ChevronRight, Sparkles } from "lucide-react";
 import styles from "./Home.module.css";
 
 const slides = [
-    { src: "/assets/404 copy.jpeg", alt: "ポートフォリオのプロフィール写真" },
-    { src: "/assets/pokemon.png", alt: "ポケモンクイズの画面" },
-    { src: "/assets/slime.png", alt: "ゲームクイズの画面" },
+    { src: "./assets/1.jpg", alt: "ポートフォリオのプロフィール写真" },
+    { src: "./assets/2.jpg", alt: "ポートフォリオのプロフィール写真" },
+    { src: "./assets/3.png", alt: "ポートフォリオのプロフィール写真" },
 ];
 
 export default function Home(){
