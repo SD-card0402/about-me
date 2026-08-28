@@ -12,31 +12,17 @@ const hobbies = {
 
         cards: [
           {
-            title: "好きな理由",
-            image: "/images/frontend-reason.jpg",
+            title: "成果物①",
             content:
-              "ユーザーが直接触れる画面を作ることが好きです。",
+              "Pythonを用いてポケモンのクイズを作りました",
+            image: "..//assets//pokemon.png"
           },
 
           {
-            title: "学んだこと",
-            image: "/images/frontend-learning.jpg",
+            title: "成果物②",
+            image: "..//assets//slime.png",
             content:
-              "React、TypeScript、UI設計について学んでいます。",
-          },
-
-          {
-            title: "制作物",
-            image: "/images/frontend-project.jpg",
-            content:
-              "ポートフォリオサイトや個人開発アプリを制作しています。",
-          },
-
-          {
-            title: "今後の目標",
-            image: "/images/frontend-goal.jpg",
-            content:
-              "Next.jsやバックエンドも学習してフルスタック開発を目指しています。",
+              "ドラクエのクイズゲームをサイトにて作成中です",
           },
         ],
       },
@@ -49,21 +35,19 @@ const hobbies = {
 
     categories: [
       {
-        name: "Hardcore",
-
         cards: [
           {
-            title: "好きな理由",
-            image: "/images/hardcore-reason.jpg",
+            title: "t+pazorite",
+            image: "..//assets//topazo.jpg",
             content:
-              "迫力のあるサウンドで集中力が高まります。",
+              "ハードコアはいいぞ",
           },
 
           {
-            title: "お気に入りアーティスト",
-            image: "/images/hardcore-artist.jpg",
+            title: "米津玄師",
+            image: "..//assets//yonedu.jpg",
             content:
-              "国内外のHardcoreアーティストをよく聴いています。",
+              "死神がいっっちばん好きです",
           },
         ],
       },
@@ -80,37 +64,17 @@ const hobbies = {
 
         cards: [
           {
-            title: "好きな理由",
-            image: "/images/fps-reason.jpg",
+            title: "第五人格",
+            image: "..//assets//daigo.jpeg",
             content:
-              "チームで戦略を考えながらプレイできるからです。",
+              "最近はサバイバーしかやっていません",
           },
 
           {
-            title: "プレイタイトル",
-            image: "/images/fps-games.jpg",
+            title: "Splatoon3",
+            image: "..//assets//supura.jpg",
             content:
-              "様々なFPSタイトルをプレイしています。",
-          },
-        ],
-      },
-
-      {
-        name: "RPG",
-
-        cards: [
-          {
-            title: "好きな理由",
-            image: "/images/rpg-reason.jpg",
-            content:
-              "ストーリーや世界観を楽しめるからです。",
-          },
-
-          {
-            title: "お気に入り作品",
-            image: "/images/rpg-favorite.jpg",
-            content:
-              "オープンワールドRPGをよくプレイしています。",
+              "スシばかり使っています。ハイドラントは許せません",
           },
         ],
       },
