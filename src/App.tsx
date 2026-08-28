@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Hobbies from "./pages/Hobbies";
 import HobbyDetails from "./pages/HobbyDetails";
-import Skills from "./pages/Contact";
+import Skills from "./pages/Skills";
 import styles from "./App.module.css";
 
 const pages = [

@@ -1,13 +1,11 @@
-import styles from "./Contact.module.css";
+import styles from "./Skills.module.css";
 
 const skills = [
     "HTML / CSS",
     "JavaScript",
     "TypeScript",
     "React",
-    "Python",
-    "Linux",
-    "Cyber Security",
+    "Python"
 ];
 
 const projects = [
@@ -20,21 +18,16 @@ const projects = [
         title: "DQ quiz",
         description:
         "選択式のクイズアプリ。React と TypeScript を使用して制作。",
-    },
-    {
-        title: "Security Learning",
-        description:
-        "CTFや脆弱性診断を通じたセキュリティ学習。"
-    },
+    }
 ];
 
-export default function Portfolio() {
+export default function Skills() {
     return (
     <main className={`${styles.page} ${styles.container}`}>
         <section className={`${styles.glass} ${styles.content}`}>
             
             <div className={styles.title}>
-                <p>Portfolio</p>
+                <p>Skills</p>
                 <hr />
                 <h1>スキルと成果物</h1>
             </div>
@@ -66,25 +59,6 @@ export default function Portfolio() {
                     </article>
                 ))}
             </div>
-        </section>
-
-        <section className={styles.section}>
-            <h2>Learning</h2>
-            
-            <p className={styles.center}>
-            React、TypeScript、ネットワーク、
-            サイバーセキュリティ、クラウド技術などを
-            中心に学習しています。
-            </p>
-        </section>
-
-        <section className={styles.section}>
-            <h2>Future Goals</h2>
-            
-            <p className={styles.center}>
-            安全で使いやすいWebサービスを開発できる
-            エンジニア兼ホワイトハッカーを目指しています。
-            </p>
         </section>
         
     </section>
