@@ -37,7 +37,7 @@ const hobbies = {
       {
         cards: [
           {
-            title: "t+pazorite",
+            title: "t+pazolite",
             image: "..//assets//4.jpg",
             content:
               "ハードコアはいいぞ",
