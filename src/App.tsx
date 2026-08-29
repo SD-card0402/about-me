@@ -11,7 +11,7 @@ import styles from "./App.module.css";
 const pages = [
   { to: "/", en: "Top", ja: "トップ", Icon: House },
   { to: "/about", en: "About", ja: "自己紹介", Icon: UserRound },
-  { to: "/hobbies", en: "Hobby's", ja: "趣味", Icon: Heart },
+  { to: "/hobbies", en: "Hobbies", ja: "趣味", Icon: Heart },
   { to: "/skills", en: "Skills", ja: "スキル", Icon: UserRound },
   { to: "/contact", en: "Contact", ja: "お問い合わせ", Icon: Mail },
 ];
