@@ -26,7 +26,7 @@ export default function Contact() {
                 </p>
 
                 <img
-                  src="/assets/404 copy.jpeg"
+                  src="./assets/404.jpeg"
                   alt="プロフィール写真"
                   className={styles.contactImage}
                 />
