@@ -38,14 +38,14 @@ const hobbies = {
         cards: [
           {
             title: "t+pazorite",
-            image: "..//assets//topazo.jpg",
+            image: "..//assets//4.jpg",
             content:
               "ハードコアはいいぞ",
           },
 
           {
             title: "米津玄師",
-            image: "..//assets//yonedu.jpg",
+            image: "../assets/10.jpg",
             content:
               "死神がいっっちばん好きです",
           },
@@ -65,16 +65,16 @@ const hobbies = {
         cards: [
           {
             title: "第五人格",
-            image: "..//assets//daigo.jpeg",
+            image: "../assets/11.jpg",
             content:
               "最近はサバイバーしかやっていません",
           },
 
           {
-            title: "Splatoon3",
-            image: "..//assets//supura.jpg",
+            title: "Minecraft",
+            image: "../assets/12.jpg",
             content:
-              "スシばかり使っています。ハイドラントは許せません",
+              "最近は離れつつあります。友達とやるのが一番楽しいですね",
           },
         ],
       },

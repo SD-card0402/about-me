@@ -23,7 +23,7 @@
 
 .featureImage {
     display: block;
-    width: min(560px, 100%);
+    width: min(300px, 100%);
     aspect-ratio: 16 / 9;
     object-fit: cover;
     margin: 30px auto 0;

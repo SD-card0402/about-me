@@ -32,7 +32,7 @@ export default function Skills() {
                 <h1>スキルと成果物</h1>
             </div>
             <img
-                src="/assets/slime.png"
+                src= "./assets/rose.gif"
                 alt="制作したクイズゲームの画面"
                 className={styles.featureImage}
             />

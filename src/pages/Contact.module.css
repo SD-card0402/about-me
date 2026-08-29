@@ -32,6 +32,7 @@
     0 25px 70px
     rgba(20, 100, 110, 0.16);
 
+  -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
 }
 

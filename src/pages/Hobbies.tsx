@@ -9,7 +9,7 @@ const items = [
     en: "Programming",
     ja: "プログラミング",
     text: "Web開発やセキュリティについて学んでいます",
-    image: "/assets/pokemon.png",
+    image: "./assets/6.png",
     Icon: Code2,
   },
   {
@@ -18,7 +18,7 @@ const items = [
     en: "Music",
     ja: "音楽",
     text: "様々なジャンルの音楽を聴いています",
-    image: "/assets/topazo.jpg",
+    image: "./assets/9.png",
     Icon: Music,
   },
   {
@@ -27,7 +27,7 @@ const items = [
     en: "Gaming",
     ja: "ゲーム",
     text: "FPSやRPGなどをプレイしています",
-    image: "/assets/daigo.jpeg",
+    image: "./assets/7.png",
     Icon: Gamepad2,
   },
 ];
