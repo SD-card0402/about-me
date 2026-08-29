@@ -98,7 +98,7 @@
 
 .hobbyImage {
   display: block;
-  width: 300px;
+  width: 200px;
   aspect-ratio: 16 / 10;
   object-fit: cover;
   margin-bottom: 22px;
